@@ -1,5 +1,5 @@
 import { signOut } from "next-auth/client";
-import Form from "./Form";
+import Form from "./Form/Form";
 
 const handleSignout = (e) => {
   e.preventDefault();
@@ -25,7 +25,7 @@ const UserForm = ({ user }) => (
       </div>
       <Form />
 
-      <a href="#" onClick={handleSignout} className="btn-signin">
+      <a href="#" onClick={handleSignout} className="btn btn-sign-in ">
         Sign out
       </a>
     </div>

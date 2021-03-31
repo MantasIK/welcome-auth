@@ -107,3 +107,43 @@ body {
   height: 5rem;
   padding-right: 1rem;
 }
+
+.form {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.form-item {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+  width: 100%;
+  display: table;
+  border-radius: 20rem;
+  border: none;
+  outline: none;
+}
+
+.form-validation {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0.1rem;
+  margin-top: 0.1rem;
+}
+
+.btn-form {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #777;
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+  outline: none;
+}

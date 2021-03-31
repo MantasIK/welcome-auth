@@ -16,11 +16,7 @@ const SignIn = ({ user }) => (
     </div>
     <div className="wrapper sign-in">
       <p className="sign-in-txt">Please Sign in</p>
-      <a
-        href="#"
-        onClick={handleSignin}
-        className="btn btn-sign-in btn-animated"
-      >
+      <a href="#" onClick={handleSignin} className="btn btn-sign-in">
         Sign in
       </a>
     </div>
