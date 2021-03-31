@@ -23,9 +23,9 @@ const UserForm = ({ user }) => (
         />
         <p className="welcome-txt">{user.name ?? user.email}</p>
       </div>
-      <Form />
+      <Form githubName={user.name} />
 
-      <a href="#" onClick={handleSignout} className="btn btn-sign-in ">
+      <a href="#" onClick={handleSignout} className="btn btn-sign-out">
         Sign out
       </a>
     </div>

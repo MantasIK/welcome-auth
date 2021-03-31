@@ -1,10 +1,15 @@
 import { useForm } from "react-hook-form";
 import { InputFields } from "./InputFields";
+import { postData } from "../../middleware/callApi";
 
-const Form = () => {
+const Form = ({ githubName }) => {
   const { register, handleSubmit, errors } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    data.githubName = githubName;
+
+    postData(data);
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="form">

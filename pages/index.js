@@ -19,10 +19,8 @@ export default function Home() {
         </h1>
       </header>
       <main className="main">
-        {/* <div> */}
         {loading ? <div>Loading...</div> : null}
         {session ? <UserForm {...session} /> : <SignIn {...session} />}
-        {/* </div> */}
       </main>
     </div>
   );

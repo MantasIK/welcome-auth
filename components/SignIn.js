@@ -5,7 +5,7 @@ const handleSignin = (e) => {
   signIn();
 };
 
-const SignIn = ({ user }) => (
+const SignIn = () => (
   <div className="container">
     <div className="logo-wrapper">
       <img

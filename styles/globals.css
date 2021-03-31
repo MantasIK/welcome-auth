@@ -47,23 +47,23 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  border: red solid thick;
-  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .logo {
   height: 30rem;
-  padding: 4rem 10rem;
+  padding: 1rem 1rem;
 }
 
 .wrapper {
-  padding: 4rem 10rem;
+  padding: 1rem 1rem;
   text-align: center;
 }
 
 .sign-in-txt {
   font-size: 6rem;
+  margin-bottom: 4rem;
 }
 
 .btn:link,
@@ -92,33 +92,39 @@ body {
   color: #777;
 }
 
+.btn-sign-out {
+  background-color: #ff00b8;
+}
+
+.wrapper.welcome {
+  min-width: 30%;
+}
+
 .welcome-header {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 900;
+  margin-bottom: 2rem;
 }
 
 .welcome-profile {
   display: flex;
   flex-direction: row;
-  font-size: 3rem;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 
 .profile-pic {
-  height: 5rem;
+  height: 3rem;
   padding-right: 1rem;
 }
 
-.form {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-}
-
 .form-item {
-  text-transform: uppercase;
   text-align: center;
-  padding: 1rem;
-  margin: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 100%;
   display: table;
   border-radius: 20rem;
@@ -137,6 +143,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
+  margin-bottom: 4rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
@@ -146,4 +153,47 @@ body {
   border: none;
   font-family: "Red Hat Display", sans-serif;
   outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .logo {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    height: 20vw;
+  }
+
+  .logo-wrapper {
+    text-align: center;
+  }
+
+  .sign-in-txt {
+    font-size: 4rem;
+  }
+
+  .wrapper.welcome {
+    width: 100%;
+    padding: 1rem 15rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .welcome-header {
+    font-size: 3rem;
+  }
+
+  .wrapper.welcome {
+    padding: 1rem 5rem;
+  }
 }
