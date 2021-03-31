@@ -3,12 +3,13 @@ import { InputFields } from "./InputFields";
 import { postData } from "../../middleware/callApi";
 
 const Form = ({ githubName }) => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, errors, reset } = useForm();
 
   const onSubmit = (data) => {
     data.githubName = githubName;
 
     postData(data);
+    reset();
   };
 
   return (
