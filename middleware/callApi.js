@@ -2,7 +2,6 @@
 //screw next.js
 
 export const postData = async (data) => {
-  console.log(process.env.SERVER_URL);
   try {
     const res = await fetch(`https://welcome-auth.vercel.app/api/userData`, {
       method: "post",
